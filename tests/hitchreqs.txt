@@ -12,7 +12,7 @@ hitchserve==0.4.8
 hitchsmtp==0.2.1
 hitchsystem==0.1.2
 hitchtest==0.9.6
-humanize==0.5.1
+humanize==3.11.0
 ipython==4.0.3
 ipython-genutils==0.2.0
 Jinja2==2.8
