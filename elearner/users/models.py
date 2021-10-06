@@ -1,20 +1,22 @@
-# -*- coding: utf-8 -*-
-# from __future__ import unicode_literals, absolute_import
-
 from django.contrib.auth.models import AbstractUser
+from django.db.models import CharField
 from django.urls import reverse
-from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 
 class User(AbstractUser):
+    """Default user for Elearner."""
 
-    # First Name and Last Name do not cover name patterns
-    # around the globe.
-    name = models.CharField(_("Name of User"), blank=True, max_length=255)
-
-    def __str__(self):
-        return self.username
+    #: First and last name do not cover name patterns around the globe
+    name = CharField(_("Name of User"), blank=True, max_length=255)
+    first_name = None  # type: ignore
+    last_name = None  # type: ignore
 
     def get_absolute_url(self):
-        return reverse('users:detail', kwargs={'username': self.username})
+        """Get url for user's detail view.
+
+        Returns:
+            str: URL for user detail.
+
+        """
+        return reverse("users:detail", kwargs={"username": self.username})

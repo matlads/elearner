@@ -1,15 +1,7 @@
----
 version: 2
 updates:
-
-  # Maintain dependencies for GitHub Actions
+  # Update Github actions in workflows
   - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-
-  # Maintain dependencies for npm
-  - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
