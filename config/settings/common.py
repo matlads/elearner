@@ -35,7 +35,7 @@ DJANGO_APPS = (
     'django.contrib.admin',
 )
 THIRD_PARTY_APPS = (
-    'crispy_forms',  # Form layouts
+    # 'crispy_forms',  # Form layouts
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
@@ -52,8 +52,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 # MIDDLEWARE CONFIGURATION
 # ------------------------------------------------------------------------------
-MIDDLEWARE_CLASSES = (
-    # Make sure djangosecure.middleware.SecurityMiddleware is listed first
+MIDDLEWARE = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -229,3 +228,4 @@ AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
