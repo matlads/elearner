@@ -1,0 +1,16 @@
+pytz
+python-slugify
+Pillow
+argon2-cffi
+whitenoise
+redis
+hiredis
+
+# Django
+# ------------------------------------------------------------------------------
+django
+django-environ
+django-model-utils
+django-allauth
+django-crispy-forms
+django-redis
