@@ -10,4 +10,4 @@ class UsersConfig(AppConfig):
 
     def ready(self):
         with contextlib.suppress(ImportError):
-            import elearner.users.signals  # noqa F401
+            import elearner.users.signals  # noqa: F401, PLC0415

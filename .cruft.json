@@ -1,0 +1,39 @@
+{
+  "template": "https://github.com/cookiecutter/cookiecutter-django",
+  "commit": "5beb756772ee1533fc226bdea108c548059bc629",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "elearner",
+      "project_slug": "elearner",
+      "description": "Behold My Awesome Project!",
+      "author_name": "Martin Atukunda",
+      "domain_name": "elearner.matlads.duckdns.org",
+      "email": "matlads@gmail.com",
+      "version": "0.1.0",
+      "open_source_license": "MIT",
+      "username_type": "username",
+      "timezone": "UTC",
+      "windows": "n",
+      "editor": "None",
+      "use_docker": "n",
+      "postgresql_version": "17",
+      "cloud_provider": "None",
+      "mail_service": "Other SMTP",
+      "use_async": "n",
+      "use_drf": "n",
+      "frontend_pipeline": "None",
+      "use_celery": "n",
+      "use_mailpit": "n",
+      "use_sentry": "n",
+      "use_whitenoise": "y",
+      "use_heroku": "n",
+      "ci_tool": "Github",
+      "keep_local_envs_in_vcs": "y",
+      "debug": "n",
+      "_template": "https://github.com/cookiecutter/cookiecutter-django",
+      "_commit": "5beb756772ee1533fc226bdea108c548059bc629"
+    }
+  },
+  "directory": null
+}

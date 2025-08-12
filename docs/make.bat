@@ -12,7 +12,7 @@ set SOURCEDIR=_source
 set BUILDDIR=_build
 set APP=..\elearner
 
-if "%1" == "" goto help
+if "%1" == "" goto html
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (
@@ -32,15 +32,15 @@ if errorlevel 9009 (
 goto end
 
 :livehtml
-sphinx-autobuild -b html --open-browser -p 7000 --watch %APP% -c . %SOURCEDIR% %BUILDDIR%/html
+sphinx-autobuild -b html --open-browser -p 9000 --watch %APP% -c . %SOURCEDIR% %BUILDDIR%/html
 GOTO :EOF
 
 :apidocs
 sphinx-apidoc -o %SOURCEDIR%/api %APP%
 GOTO :EOF
 
-:help
-%SPHINXBUILD% -b help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+:html
+%SPHINXBUILD% -b html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 
 :end
 popd
